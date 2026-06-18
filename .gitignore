@@ -1,7 +1,8 @@
-# Terraform local state and backups
+# Terraform
 **/.terraform/*
 *.tfstate
 *.tfstate.*
+*.tfstate.backup
 crash.log
 crash.*.log
 *.tfvars
@@ -12,11 +13,31 @@ override.tf.json
 *_override.tf.json
 .terraformrc
 terraform.rc
+.terraform.lock.hcl
 
 # SSH Keys
 lab-key
 lab-key.pub
+terraform/lab-key
+terraform/lab-key.pub
 
 # Environment Variables
 .env
 .env.local
+.env.*.local
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
